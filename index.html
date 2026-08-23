@@ -99,11 +99,15 @@
   }
   .logo{display:block;line-height:0;}
   .logo-img{
-    height:64px;width:auto;
+    height:104px;width:auto;
     filter:brightness(0) invert(1);
     transition:filter .4s var(--ease), height .4s var(--ease);
   }
-  header.scrolled .logo-img{filter:none;height:52px;}
+  header.scrolled .logo-img{filter:none;height:78px;}
+  @media (max-width:600px){
+    .logo-img{height:78px;}
+    header.scrolled .logo-img{height:60px;}
+  }
   nav.desktop-nav{display:flex;align-items:center;gap:44px;}
   nav.desktop-nav .links{display:flex;gap:34px;}
   nav.desktop-nav a{
@@ -379,7 +383,6 @@
 
 <section class="hero" id="inicio">
   <div class="hero-inner">
-    <p class="eyebrow">Sueño Verde · Jardinería y Paisajismo</p>
     <h1>Diseñamos espacios verdes que transforman tu hogar.</h1>
     <p class="subtext">Jardinería y paisajismo profesional en General Rodríguez y alrededores.</p>
     <div class="hero-actions">
